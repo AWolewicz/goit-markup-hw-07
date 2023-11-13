@@ -28,11 +28,13 @@
                     <li><a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <a class="mini-menu" href="./menu.html">
-                <svg class="burger" width="32" height="22">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-            </a>
+            <menu class="burger">
+                <button class="burger-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="32" height="22" class="burger">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </menu>
         </div>
     </header>
     <main>
@@ -45,7 +47,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="sec-header visually-hidden">Our Values</h2>
-                <ul class="list">
+                <ul class="list list-img">
                     <li>
                         <div class="values-item">
                         <svg width="64" height="64">
@@ -75,7 +77,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list list-values-mobile">
                     <li class="values-list">
                         <h3 class="header-third">Strategy</h3>
                         <p class="desc-header-third">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
@@ -413,9 +415,61 @@
             </form>
         </div>
     </div>
+    <div class="menu-container-sec js-menu-container" id="mobile-menu">
+        <div class="hamburger">
+            <button class="menu-toggle js-close-menu">
+                <svg width="8" height="8" class="burger-close">
+                    <use href="./images/icons.svg#icon-burger-close"></use>
+                </svg>
+            </button>
+        </div>
+        <nav class="burger-nav">
+            <ul class="mobile-menu">
+                <li><a href="./index.html" class="link burger-link">Studio</a></li>
+                <li><a href="./portfolio.html" class="link burger-link">Portfolio</a></li>
+                <li><a href="" class="link burger-link">Contacts</a></li>
+            </ul>
+        </nav>
+        <address class="burger-address">
+            <ul class="burger-list">
+                <li><a href="tel:+110001111111" class="burger-contact">+11 (0000) 111-11-11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="burger-contact">info@devstudio.com</a></li>
+        </address>
+        <ul class="list team-social-list">
+            <li class="social-item">
+                <a class="team-links" href="#">
+                    <svg width="16" height="16" class="social-links">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="team-links" href="#">
+                    <svg width="16" height="16" class="social-links">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="team-links" href="#">
+                    <svg width="16" height="16" class="social-links">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-item">
+                <a class="team-links" href="#">
+                    <svg width="16" height="16" class="social-links">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
