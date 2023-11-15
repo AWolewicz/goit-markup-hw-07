@@ -106,8 +106,6 @@
     .team-social-list {
         display:flex;
         justify-content:space-between;
-        margin-top:48px;
-        margin-bottom:40px;
         margin-left:40px;
         margin-right:40px;
     }
@@ -911,6 +909,10 @@
         .img-elem {
             display: none;
         }
+        .list-team-first {
+            flex-direction: column;
+            align-items: center;
+        }
 }
 
 /* ================================================= TABLET 👇 ========================================= */
@@ -1013,11 +1015,11 @@
         }
     
         .values-list {
-            width: 100%;
+            width: calc((100% - 24px) / 2);
         }
     
         .container {
-            max-width: 100%;
+            width: 768px;
             padding-inline: 15px;
             margin-inline: auto;
         }
